@@ -1,0 +1,31 @@
+:root {
+	//? Colors
+	--current-color: currentColor;
+	--main-color: #01996d;
+	--main-background-color: #ffffff;
+	--second-background-color: #245852;
+	--main-text-color: #424242;
+	--second-text-color: #000000;
+	--navigation-text-color: #292929;
+	--button-text-color: #ffffff;
+	--header-underline-color: #d6d6d6;
+
+	//? Borders
+	--button-border: 1px;
+	--header-underline-border: 1px;
+	--double-border: 2px;
+	--bold-border: 4px;
+
+	//? Borders styles
+	--button-border-style: solid;
+	--header-underline-style: solid;
+
+	//? Borders radius
+	--button-border-radius: 4px;
+
+	//? Fonts
+	--main-font: "Lato", sans-serif;
+
+	//? Sizes
+	--header-text-size: 20px;
+}
