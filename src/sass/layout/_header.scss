@@ -1,12 +1,25 @@
 .header {
+	display: flex;
+	align-items: center;
+	height: 85px;
+
+	font-family: "Lato", sans-serif;
 }
-.container {
-}
+
 .header__logo {
+	width: 80px;
+	height: 23px;
 }
 .header__navigation {
+	display: flex;
+	width: 557px;
+	margin-left: 170px;
+	justify-content: space-between;
+	align-items: center;
 }
 .header__login {
+	margin-left: auto;
 }
 .trial__button {
+	margin-left: 35px;
 }
