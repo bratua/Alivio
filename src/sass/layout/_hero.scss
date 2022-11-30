@@ -1,8 +1,45 @@
 .hero {
+	position: relative;
 }
-.hero__container {
+
+.hero__background {
+	overflow: hidden;
+	border: var(--hero-border);
+	border-style: var(--hero-border-style);
+	border-color: var(--hero-border-color);
+	background: var(--hero-background-color);
 }
-.hero__gradiet {
-}
+
 .hero__img {
+	height: 895px;
+}
+
+.hero__intro {
+	position: absolute;
+	width: 440px;
+	height: 384px;
+	left: 275px;
+	top: 175px;
+}
+
+.intro__header {
+	margin-bottom: 30px;
+	font-size: 65px;
+	line-height: 1.14;
+}
+
+.intro__text {
+	width: 420px;
+	margin-bottom: 18px;
+	font-weight: 400;
+	line-height: 1.445;
+	color: var(--hero-text-color);
+}
+
+.intro__button {
+	width: 227px;
+	height: 65px;
+	padding: 20px 45px;
+	text-align: center;
+	line-height: 1.25;
 }
