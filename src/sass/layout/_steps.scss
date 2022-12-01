@@ -1,15 +1,62 @@
 .steps {
+	padding-top: 170px;
+	padding-bottom: 50;
+	outline: 2px solid #232323;
 }
 
 .steps__content {
 	margin: 0 auto;
 }
-.steps__header {
+.steps__title {
+	font-size: 24px;
+	line-height: 1.57;
+	font-weight: 600;
 }
-.steps__intro {
+.steps__about {
+	justify-content: space-between;
+	margin-bottom: 160px;
+}
+.about__title {
+	width: 584px;
+	font-size: 50px;
+	line-height: 1.57;
+}
+.about__text {
+	width: 670px;
+	line-height: 1.5;
+	padding-right: 30px;
+	color: var(--main-text-color);
+}
+
+.steps__advantage {
 	display: flex;
+	justify-content: space-between;
 }
-.intro__header {
+.advantage__card {
+	width: 390px;
 }
-.intro__text {
+
+.card__number {
+	position: relative;
+	font-family: var(--header-font);
+	font-weight: 400;
+	font-size: 150px;
+	text-align: left;
+
+	color: rgba(1, 153, 109, 0.2);
+}
+
+.card__title {
+	position: absolute;
+
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.5;
+
+	color: var(--second-text-color);
+}
+
+.first-card {
+	top: 97px;
+	left: 89px;
 }
