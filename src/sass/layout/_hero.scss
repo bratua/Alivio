@@ -1,19 +1,14 @@
 .hero {
 	position: relative;
-	margin: 0 auto;
-}
-
-.hero__background {
-	overflow: hidden;
+	width: 1920px;
+	height: 895px;
 	border: var(--hero-border);
 	border-style: var(--hero-border-style);
 	border-color: var(--hero-border-color);
 	background: var(--hero-background-color);
 	background-image: url(/src/images/hero/BGbg@1x.jpg);
-}
-
-.hero__img {
-	height: 895px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .hero__intro {
