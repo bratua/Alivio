@@ -1,0 +1,37 @@
+.story {
+	color: var(--story-text-color);
+	background-color: var(--story-background-color);
+}
+.story__content {
+	gap: 30px;
+}
+.story__about {
+}
+.story__title {
+	margin-bottom: 33px;
+	font-size: 50px;
+	font-family: var(--header-font);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.57;
+}
+
+.story__text {
+	margin-bottom: 57px;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 1.57;
+}
+
+.story__button {
+	width: 240px;
+	height: 65px;
+	padding: 20px 45px;
+	font-size: 20px;
+}
+
+.story__media {
+	width: 895.84px;
+	height: 516.11px;
+	background-color: aquamarine;
+}
