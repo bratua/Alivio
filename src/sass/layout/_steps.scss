@@ -1,5 +1,5 @@
 .steps {
-	padding-top: 170px;
+	margin: 170px;
 	padding-bottom: 50;
 	outline: 2px solid #232323;
 }
@@ -14,7 +14,6 @@
 }
 .steps__about {
 	justify-content: space-between;
-	margin-bottom: 160px;
 }
 .about__title {
 	width: 584px;
@@ -36,8 +35,21 @@
 	width: 390px;
 }
 
+.first__card {
+	margin-top: 75px;
+}
+
+.second__card {
+	margin-top: 300px;
+}
+
+.third__card {
+	margin-top: 125px;
+}
+
 .card__number {
 	position: relative;
+	margin-bottom: 30px;
 	font-family: var(--header-font);
 	font-weight: 400;
 	font-size: 150px;
@@ -48,15 +60,31 @@
 
 .card__title {
 	position: absolute;
-
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 1.5;
-
+	top: 97px;
 	color: var(--second-text-color);
 }
 
-.first-card {
-	top: 97px;
+.first-title {
 	left: 89px;
+}
+
+.second-title {
+	left: 77px;
+}
+
+.third-title {
+	left: 124px;
+}
+
+.card__text {
+	color: var(--main-text-color);
+	line-height: 1.5;
+}
+
+.card__img {
+	border-radius: 12px;
+	margin-top: 40px;
 }
