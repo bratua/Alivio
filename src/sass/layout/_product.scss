@@ -1,12 +1,18 @@
 .product {
+	width: 1920px;
 	padding-top: 120px;
 	padding-bottom: 170px;
 	background-color: rosybrown;
+	margin: 0 auto;
 }
 
 .product__content {
-	width: 1300px;
-	height: 900px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 87px;
+	// width: 1300px;
+	// height: 900px;
 	background-color: aquamarine;
 }
 
@@ -18,4 +24,64 @@
 	width: 638px;
 	height: 573px;
 	border-radius: 18px;
+	margin-left: 60px;
+}
+
+.product__card {
+	position: absolute;
+	top: 354px;
+}
+
+.card {
+	width: 296px;
+	height: 294px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 22.6px;
+	border-radius: 4px;
+	background-color: #fff;
+	color: var(--second-text-color);
+	filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+	//!
+	&__title {
+		padding-bottom: 13px;
+		font-weight: 600;
+		font-size: 14.49px;
+		line-height: 1.57;
+	}
+
+	&__underline {
+		width: 110.49px;
+		height: 0px;
+
+		border: 1px solid var(--second-text-color);
+	}
+}
+
+.product__title {
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 1.57;
+
+	color: var(--main-text-color);
+}
+
+.product__subtitle {
+	margin-bottom: 20px;
+	font-size: 50px;
+	line-height: 1.57;
+}
+
+.product__text {
+	margin-bottom: 40px;
+	line-height: 1.55;
+}
+
+.product__button {
+	width: 227px;
+	height: 65px;
+	font-size: 20px;
+	line-height: 1.25;
 }
