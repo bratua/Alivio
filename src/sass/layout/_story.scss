@@ -1,12 +1,23 @@
 .story {
-	color: var(--story-text-color);
+	width: 1920px;
+	padding-top: 230px;
+	padding-bottom: 177px;
 	background-color: var(--story-background-color);
+	margin: 0 auto;
 }
+
 .story__content {
+	width: 1500px;
+	height: 516px;
 	gap: 30px;
 }
+
 .story__about {
+	width: 580px;
+	height: 352px;
+	color: var(--story-text-color);
 }
+
 .story__title {
 	margin-bottom: 33px;
 	font-size: 50px;
@@ -31,7 +42,9 @@
 }
 
 .story__media {
-	width: 895.84px;
-	height: 516.11px;
-	background-color: aquamarine;
+	width: 895px;
+	height: 516px;
+	border-radius: 16px;
+
+	background-color: black;
 }
