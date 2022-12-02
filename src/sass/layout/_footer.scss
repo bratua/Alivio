@@ -1,0 +1,29 @@
+.footer {
+	width: 1920px;
+	margin: 0 auto;
+	background-color: var(--story-background-color);
+}
+.fotter__content {
+	padding-top: 95px;
+	padding-bottom: 144px;
+}
+
+.footer__logo {
+}
+
+.footer__img {
+	width: 107px;
+	height: 30px;
+	fill: red;
+}
+
+.footer__menu {
+}
+
+.footer__item {
+	padding-top: 60px;
+	font-size: 25px;
+	line-height: 30px;
+
+	color: var(--story-text-color);
+}
