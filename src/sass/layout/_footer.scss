@@ -9,21 +9,20 @@
 }
 
 .footer__logo {
+	color: aquamarine;
 }
 
 .footer__img {
 	width: 107px;
 	height: 30px;
-	fill: red;
 }
 
 .footer__menu {
+	font-size: 25px;
+	line-height: 30px;
+	color: var(--story-text-color);
 }
 
 .footer__item {
 	padding-top: 60px;
-	font-size: 25px;
-	line-height: 30px;
-
-	color: var(--story-text-color);
 }
