@@ -2,6 +2,10 @@
 @import "./utils/normalize";
 @import "~node_modules/modern-normalize/modern-normalize.css";
 
+//! Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
 //! Base
 @import "./base/wrapper";
 
@@ -13,9 +17,6 @@
 @import "./layout/story";
 @import "./layout/product";
 @import "./layout/footer";
-
-//! Utils
-@import "./utils/variables";
 
 //! Components
 @import "./components/buttons";
