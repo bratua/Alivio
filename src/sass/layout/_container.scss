@@ -1,15 +1,19 @@
 .container {
 	margin: 0 auto;
+	border: 2px dotted;
 
 	@include mobile {
+		margin: 0 auto;
 		width: 480px;
 	}
 
 	@include tablet {
+		margin: 0 auto;
 		width: 768px;
 	}
 
 	@include desktop {
-		width: 1200px;
+		margin: 0 auto;
+		width: 1400px;
 	}
 }

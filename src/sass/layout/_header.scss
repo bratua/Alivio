@@ -17,7 +17,7 @@
 	}
 
 	@include desktop {
-		height: 85px;
+		// height: 85px;
 		background-color: greenyellow;
 	}
 }
@@ -39,9 +39,14 @@
 // 	color: var(--main-color);
 // }
 
-// .navigation {
-// 	width: 557px;
-// }
+.navigation {
+	width: 557px;
+	display: none;
+
+	@include tablet {
+		display: block;
+	}
+}
 
 // .navigation__menu {
 // 	display: flex;
