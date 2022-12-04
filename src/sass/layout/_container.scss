@@ -1,6 +1,8 @@
 .container {
+	height: 100%;
 	margin: 0 auto;
 	border: 2px dotted;
+	// max-width: 320px;
 
 	@include mobile {
 		margin: 0 auto;

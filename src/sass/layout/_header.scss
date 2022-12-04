@@ -1,17 +1,14 @@
 .header {
-	display: flex;
 	font-family: var(--main-font);
 	font-weight: 500;
-	margin: 0 auto;
+	height: 60px;
+	background-color: cadetblue;
 
 	@include mobile {
-		height: 60px;
 		background-color: aquamarine;
 	}
 
 	@include tablet {
-		display: flex;
-		align-items: center;
 		height: 85px;
 		background-color: orange;
 	}
@@ -20,6 +17,14 @@
 		// height: 85px;
 		background-color: greenyellow;
 	}
+}
+
+.header__content {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin: 0 auto;
+	padding: 5px;
 }
 
 // .header {
@@ -35,9 +40,9 @@
 // 	margin-right: 170px;
 // }
 
-// .logo {
-// 	color: var(--main-color);
-// }
+.logo {
+	color: var(--main-color);
+}
 
 .navigation {
 	width: 557px;
