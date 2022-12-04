@@ -7,7 +7,8 @@
         </svg>
       </div>
 
-      <div class="header__menu">
+      <div class="header__menu" id="mobile" data-mobile>
+        <!-- <div class="header__menu"></div> -->
         <nav class="navigation">
           <ul class="navigation__menu">
             <li class="navigation__item">
@@ -39,7 +40,7 @@
         class="menu__button"
         type="button"
         aria-expanded="false"
-        aria-controls="menu__mobile"
+        aria-controls="mobile"
         data-menu-button
       >
         <svg
@@ -58,8 +59,6 @@
           ></use>
         </svg>
       </button>
-
-      <div class="menu__mobile" id="menu__mobile" menu-mobile>Mobile Menu</div>
     </div>
   </div>
 </header>
