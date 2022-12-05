@@ -22,34 +22,6 @@
 	}
 }
 
-.logo {
-	color: var(--main-color);
-}
-
-.menu__button {
-	display: inline-flex;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background-color: transparent;
-
-	@include tablet {
-		display: none;
-	}
-}
-
-.menu__button .icon__cross {
-	display: none;
-}
-
-.menu__button.is-open .icon__cross {
-	display: block;
-}
-
-.menu__button.is-open .icon__menu {
-	display: none;
-}
-
 .header__menu {
 	display: none;
 
@@ -79,6 +51,65 @@
 	@include desktop {
 		margin-left: 170px;
 	}
+}
+
+.logo {
+	color: var(--main-color);
+}
+
+.register__menu {
+	@include tablet {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+	}
+}
+
+.register__item {
+	font-size: var(--header-text-size);
+}
+
+.register__link {
+	color: var(--second-text-color);
+}
+
+.register__button {
+	@include tablet {
+		width: 130px;
+		height: 40px;
+		padding: 3px 15px;
+		margin-left: 15px;
+	}
+
+	@include desktop {
+		width: 180px;
+		height: 50px;
+		margin-left: 35px;
+	}
+}
+
+.menu__button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.menu__button .icon__cross {
+	display: none;
+}
+
+.menu__button.is-open .icon__cross {
+	display: block;
+}
+
+.menu__button.is-open .icon__menu {
+	display: none;
 }
 
 .navigation {
@@ -111,35 +142,4 @@
 .navigation__link {
 	color: var(--navigation-text-color);
 	font-size: var(--header-text-size);
-}
-
-.register__menu {
-	@include tablet {
-		display: flex;
-		align-items: center;
-		margin-left: auto;
-	}
-}
-
-.register__item {
-	font-size: var(--header-text-size);
-}
-
-.register__link {
-	color: var(--second-text-color);
-}
-
-.register__button {
-	@include tablet {
-		width: 130px;
-		height: 40px;
-		padding: 3px 15px;
-		margin-left: 15px;
-	}
-
-	@include desktop {
-		width: 180px;
-		height: 50px;
-		margin-left: 35px;
-	}
 }

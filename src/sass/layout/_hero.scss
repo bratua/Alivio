@@ -11,7 +11,7 @@
 	background-position: center;
 }
 
-.hero__intro {
+.hero__about {
 	position: absolute;
 	width: 440px;
 	height: 384px;
@@ -19,13 +19,13 @@
 	top: 175px;
 }
 
-.intro__header {
+.hero__header {
 	margin-bottom: 30px;
 	font-size: 65px;
 	line-height: 1.14;
 }
 
-.intro__text {
+.hero__text {
 	width: 420px;
 	margin-bottom: 18px;
 	font-weight: 400;
@@ -33,7 +33,7 @@
 	color: var(--hero-text-color);
 }
 
-.intro__button {
+.hero__button {
 	width: 227px;
 	height: 65px;
 	padding: 20px 45px;
