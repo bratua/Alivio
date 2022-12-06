@@ -18,8 +18,8 @@
 	}
 
 	@include desktop {
-		width: 1920px;
-		height: 895px;
+		max-width: 1920px;
+		max-height: 895px;
 	}
 }
 
