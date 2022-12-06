@@ -12,7 +12,9 @@
 	background-position: 60%;
 
 	@include tablet {
-		background-position: center;
+		background-color: aquamarine;
+		// background-position: 100%;
+		// background-position: center;
 	}
 
 	@include desktop {
@@ -30,15 +32,15 @@
 
 .hero__about {
 	// position: absolute;
-	padding: 10px;
-	// width: 320px;
-
-	margin-top: auto;
+	height: calc(100vh - 20px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	@include tablet {
-		width: 320px;
-		top: 20%;
-		left: 160px;
+		width: 40%;
+		margin-left: 40px;
+		padding: 30px 0;
 	}
 
 	@include desktop {
@@ -51,11 +53,12 @@
 }
 
 .hero__header {
-	margin-bottom: 20px;
-	font-size: 40px;
+	margin-bottom: auto;
+	font-size: 30px;
 	line-height: 1.14;
 
 	@include tablet {
+		// width: 40%;
 		font-size: 55px;
 	}
 
@@ -66,25 +69,29 @@
 }
 
 .hero__text {
-	margin-bottom: 12px;
-	font-size: 16px;
-	color: var(--hero-text-color);
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: black;
 
 	@include tablet {
-		font-size: 18px;
 		font-weight: 400;
 		line-height: 1.445;
 	}
 
 	@include desktop {
-		font-size: 20px;
+		color: var(--hero-text-color);
 	}
 }
 
 .hero__button {
-	width: 227px;
-	height: 65px;
-	padding: 20px 45px;
-	text-align: center;
-	line-height: 1.25;
+	width: 100%;
+	height: 50px;
+
+	@include tablet {
+		width: 227px;
+		height: 65px;
+		padding: 20px 45px;
+		text-align: center;
+		line-height: 1.25;
+	}
 }
