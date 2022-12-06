@@ -12,33 +12,27 @@
 	background-position: 60%;
 
 	@include tablet {
-		background-color: aquamarine;
+		// background-size: cover;
 		// background-position: 100%;
-		// background-position: center;
+		background-position: center;
 	}
 
 	@include desktop {
 		width: 1920px;
 		height: 895px;
-		// border: var(--hero-border);
-		// border-style: var(--hero-border-style);
-		// border-color: var(--hero-border-color);
-		// background: var(--hero-background-color);
-		// background-image: url(/src/images/hero/BGbg@1x.jpg);
-		// background-repeat: no-repeat;
-		background-position: center;
 	}
 }
 
 .hero__about {
 	// position: absolute;
-	height: calc(100vh - 20px);
+	height: 100%;
+	// height: calc(100vh - 40px);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 
 	@include tablet {
-		width: 40%;
+		width: 50%;
 		margin-left: 40px;
 		padding: 30px 0;
 	}
@@ -54,12 +48,17 @@
 
 .hero__header {
 	margin-bottom: auto;
-	font-size: 30px;
+	font-size: 35px;
 	line-height: 1.14;
 
+	@include mobile {
+		font-size: 40px;
+		// width: 60%;
+	}
+
 	@include tablet {
-		// width: 40%;
-		font-size: 55px;
+		// width: 100%;
+		font-size: 50px;
 	}
 
 	@include desktop {
@@ -69,9 +68,14 @@
 }
 
 .hero__text {
-	margin-bottom: 20px;
-	font-size: 20px;
+	margin-bottom: 40px;
+	font-size: 25px;
 	color: black;
+
+	@include mobile {
+		margin-bottom: 50px;
+		font-size: 20px;
+	}
 
 	@include tablet {
 		font-weight: 400;
