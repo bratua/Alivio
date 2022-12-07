@@ -6,6 +6,10 @@
 
 .steps__content {
 	padding: 20px;
+
+	@include desktop {
+		padding: 0px;
+	}
 }
 
 .steps__title {
