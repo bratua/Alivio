@@ -12,7 +12,7 @@
 .header__content {
 	display: flex;
 	align-items: center;
-	// justify-content: space-between;
+	justify-content: space-between;
 	height: 100%;
 	padding: 20px;
 
@@ -36,7 +36,7 @@
 	&.is-open {
 		display: block;
 		z-index: 1000;
-		background-color: #fff;
+		background-color: rgba($color: #ffffff, $alpha: 0.75);
 	}
 
 	@include tablet {
@@ -77,6 +77,9 @@
 }
 
 .register__button {
+	width: 180px;
+	height: 50px;
+
 	@include tablet {
 		width: 130px;
 		height: 40px;
