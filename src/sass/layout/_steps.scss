@@ -1,88 +1,153 @@
 .steps {
-	margin: 170px 232px 50px 275px;
+	@include desktop {
+		margin: 170px 232px 50px 275px;
+	}
 }
 
-// .steps__content {
-// 	margin: 0 auto;
-// }
+.steps__content {
+	padding: 20px;
+}
+
 .steps__title {
+	margin-bottom: 1 0px;
 	font-size: 24px;
 	line-height: 1.57;
 	font-weight: 600;
+
+	// @include desktop {
+	// 	font-size: 24px;
+	// 	line-height: 1.57;
+	// 	font-weight: 600;
+	// }
 }
 .steps__about {
-	justify-content: space-between;
+	@include desktop {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
 }
+
 .about__title {
-	width: 584px;
-	font-size: 50px;
-	line-height: 1.57;
+	// padding: 40px;
+	font-size: 40px;
+	margin-bottom: 20px;
+
+	@include desktop {
+		max-width: 584px;
+		font-size: 50px;
+		line-height: 1.57;
+	}
 }
 .about__text {
-	width: 670px;
+	// margin-bottom: 20px;
 	line-height: 1.5;
-	padding-right: 30px;
 	color: var(--main-text-color);
+	@include desktop {
+		padding-right: 30px;
+		max-width: 670px;
+	}
 }
 
 .steps__advantage {
-	display: flex;
-	justify-content: space-between;
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 .advantage__card {
-	width: 390px;
+	@include desktop {
+		width: 390px;
+	}
 }
 
 .first__card {
-	margin-top: 75px;
+	@include desktop {
+		margin-top: 75px;
+	}
 }
 
 .second__card {
-	margin-top: 300px;
+	@include desktop {
+		margin-top: 300px;
+	}
 }
 
 .third__card {
-	margin-top: 125px;
+	@include desktop {
+		margin-top: 125px;
+	}
 }
 
 .card__number {
 	position: relative;
-	margin-bottom: 30px;
+	color: rgba(1, 153, 109, 0.2);
 	font-family: var(--header-font);
 	font-weight: 400;
-	font-size: 150px;
+	font-size: 100px;
 	text-align: left;
 
-	color: rgba(1, 153, 109, 0.2);
+	@include desktop {
+		margin-bottom: 30px;
+		font-size: 150px;
+	}
 }
 
 .card__title {
+	color: var(--second-text-color);
 	position: absolute;
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.5;
-	top: 97px;
-	color: var(--second-text-color);
+	top: 64px;
+
+	@include desktop {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.5;
+		top: 97px;
+	}
 }
 
 .first-title {
-	left: 89px;
+	left: 58px;
+	@include desktop {
+		left: 89px;
+	}
 }
 
 .second-title {
-	left: 77px;
+	left: 58px;
+	@include desktop {
+		left: 77px;
+	}
 }
 
 .third-title {
-	left: 124px;
+	left: 58px;
+	@include desktop {
+		left: 124px;
+	}
 }
 
 .card__text {
+	margin-bottom: 15px;
 	color: var(--main-text-color);
 	line-height: 1.5;
+
+	@include desktop {
+		margin-bottom: 0px;
+	}
 }
 
 .card__img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
 	border-radius: 12px;
-	margin-top: 40px;
+
+	@include desktop {
+		margin-top: 40px;
+	}
 }
