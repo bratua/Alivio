@@ -1,6 +1,9 @@
 .steps {
+	margin: 0;
+
 	@include desktop {
-		margin: 170px 232px 50px 275px;
+		padding-top: 170px;
+		padding-bottom: 50px;
 	}
 }
 
@@ -48,11 +51,14 @@
 	// margin-bottom: 20px;
 	line-height: 1.5;
 	color: var(--main-text-color);
+
 	@include desktop {
 		padding-right: 30px;
 		max-width: 670px;
 	}
 }
+
+//? Advantage
 
 .steps__advantage {
 	@include desktop {
@@ -150,6 +156,10 @@
 	margin: 0 auto;
 	max-width: 100%;
 	border-radius: 12px;
+
+	@include tablet {
+		width: 760px;
+	}
 
 	@include desktop {
 		margin-top: 40px;
