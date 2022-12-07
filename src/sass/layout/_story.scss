@@ -41,23 +41,31 @@
 }
 
 .story__text {
-	margin-bottom: 57px;
-	font-weight: 600;
-	font-size: 25px;
-	line-height: 1.57;
+	@include desktop {
+		margin-bottom: 57px;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 1.57;
+	}
 }
 
 .story__button {
-	width: 240px;
-	height: 65px;
-	padding: 20px 45px;
-	font-size: 20px;
+	@include desktop {
+		width: 240px;
+		height: 65px;
+		padding: 20px 45px;
+		font-size: 20px;
+	}
 }
 
 .story__media {
-	width: 895px;
-	height: 516px;
+	max-width: 480px;
+	max-height: 275px;
 	border-radius: 16px;
-
 	background-color: black;
+
+	@include desktop {
+		width: 895px;
+		height: 516px;
+	}
 }
