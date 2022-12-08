@@ -40,7 +40,7 @@
 }
 
 .story__title {
-	color: var(--main-color);
+	// color: var(--main-color);
 	font-family: var(--header-font);
 	font-style: normal;
 	font-weight: 700;
@@ -49,7 +49,7 @@
 	margin-bottom: 10px;
 
 	@include desktop {
-		color: var(--third-text-color);
+		// color: var(--third-text-color);
 		margin-bottom: 33px;
 		font-size: 50px;
 		line-height: 1.57;
@@ -57,14 +57,14 @@
 }
 
 .story__text {
-	color: black;
+	// color: black;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 1.2;
 	margin-bottom: 10px;
 
 	@include desktop {
-		color: white;
+		// color: white;
 		margin-bottom: 57px;
 		font-weight: 600;
 		font-size: 25px;
@@ -97,6 +97,7 @@
 	height: 160px;
 	border-radius: 16px;
 	background-image: url(/src/images/story/video@1x.jpg);
+	background-size: contain;
 
 	@include mobile {
 		width: 440px;
@@ -106,13 +107,13 @@
 	@include tablet {
 		// min-width: 100vw;
 		// min-height: 418px;
-		width: 728px;
-		height: 418px;
+		min-width: 728px;
+		min-height: 418px;
 	}
 
 	@include desktop {
-		width: 895px;
-		height: 516px;
+		max-width: 895px;
+		max-height: 516px;
 	}
 }
 
