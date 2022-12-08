@@ -1,0 +1,65 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: 1500;
+
+	overflow-y: auto;
+
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	padding: 30px;
+	background-color: rgba($color: #c1c1c1, $alpha: 0.5);
+}
+
+.modal {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 80%;
+	height: 70%;
+
+	overflow: hidden;
+
+	background-color: black;
+
+	// transform: translateX(0);
+
+	.backdrop.is-hidden & {
+		// transform: translate(100%, -50%);
+
+		transform: translateX(100%);
+	}
+}
+
+.modal__close-button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 1;
+}
+
+.close-button {
+	width: 140px;
+	height: 140px;
+
+	// border-radius: 50%;
+
+	outline: none;
+	border: none;
+
+	background-color: transparent;
+
+	color: red;
+
+	// @include projTransitions(color);
+
+	&:hover,
+	&:focus {
+		color: orange;
+		// background-color: transparent;
+		background-color: grey;
+	}
+}
