@@ -1,6 +1,6 @@
 .story {
-	// background-color: var(--story-background-color);
-
+	background-color: var(--story-background-color);
+	margin: 0 auto;
 	@include desktop {
 		max-width: 1920px;
 		padding-top: 230px;
@@ -10,7 +10,6 @@
 
 .story__content {
 	padding: 20px;
-	margin: 0 auto;
 
 	// @include tablet {
 	// 	display: flex;
@@ -50,6 +49,7 @@
 	margin-bottom: 10px;
 
 	@include desktop {
+		color: var(--third-text-color);
 		margin-bottom: 33px;
 		font-size: 50px;
 		line-height: 1.57;
@@ -95,8 +95,8 @@
 .story__media {
 	width: 280px;
 	height: 160px;
-	background-color: rgb(226, 218, 218);
 	border-radius: 16px;
+	background-image: url(/src/images/story/video@1x.jpg);
 
 	@include mobile {
 		width: 440px;
