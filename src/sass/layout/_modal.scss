@@ -11,26 +11,25 @@
 	height: 100%;
 	padding: 15px;
 	padding: 30px;
-	background-color: rgba($color: #c1c1c1, $alpha: 0.5);
+	background-color: rgba($color: #d1d1f1, $alpha: 0.5);
+
+	&.is-hidden {
+		display: none;
+	}
 }
 
 .modal {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	width: 80%;
-	height: 70%;
+	position: relative;
+	margin: 0 auto;
+	max-width: 600px;
+	min-height: 100%;
 
 	overflow: hidden;
 
-	background-color: black;
+	background-color: var(--second-background-color);
 
-	// transform: translateX(0);
-
-	.backdrop.is-hidden & {
-		// transform: translate(100%, -50%);
-
-		transform: translateX(100%);
+	@include tablet {
+		min-height: 70%;
 	}
 }
 
@@ -42,24 +41,17 @@
 }
 
 .close-button {
-	width: 140px;
-	height: 140px;
-
-	// border-radius: 50%;
+	width: 30px;
+	height: 30px;
 
 	outline: none;
 	border: none;
-
+	color: white;
 	background-color: transparent;
-
-	color: red;
-
-	// @include projTransitions(color);
 
 	&:hover,
 	&:focus {
-		color: orange;
-		// background-color: transparent;
-		background-color: grey;
+		background-color: transparent;
+		// background-color: grey;
 	}
 }
