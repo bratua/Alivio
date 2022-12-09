@@ -21,15 +21,15 @@
 .modal {
 	position: relative;
 	margin: 0 auto;
-	max-width: 600px;
-	min-height: 100%;
+	max-width: 500px;
+	// min-height: 100%;
 
 	overflow: hidden;
 
 	background-color: var(--second-background-color);
 
 	@include tablet {
-		min-height: 70%;
+		// min-height: 70%;
 	}
 }
 

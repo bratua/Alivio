@@ -1,38 +1,57 @@
-<form action="" class="form__register">
-  <label>
-    First name
-    <input type="text" class="form__first-name" />
-  </label>
+<form class="form register">
+  <h2 class="form__title titles">Registration</h2>
+  <ul class="form__list">
+    <li class="form__field">
+      <label>
+        <p class="field__name">First name</p>
+        <input type="text" class="input form__first-name" />
+      </label>
+    </li>
+    <li class="form__field">
+      <label>
+        <p class="field__name">Last name</p>
+        <input type="text" class="input form__last-name" />
+      </label>
+    </li>
+    <li class="form__field">
+      <label>
+        <p class="field__name">E-mail</p>
+        <input type="e-mail" class="input form__email" />
+      </label>
+    </li>
+    <li class="form__field">
+      <label>
+        <p class="field__name">Login</p>
+        <input type="text" class="input form__login" />
+      </label>
+    </li>
+    <li class="form__field">
+      <label>
+        <p class="field__name">Password</p>
+        <input type="password" class="input form__password" />
+      </label>
+    </li>
 
-  <label>
-    Last name
-    <input type="text" class="form__last-name" />
-  </label>
-
-  <label>
-    E-mail
-    <input type="e-mail" class="form__email" />
-  </label>
-
-  <label>
-    Login
-    <input type="text" class="form__login" />
-  </label>
-
-  <label>
-    Password
-    <input type="password" class="form__password" />
-  </label>
+    <button class="form__button buttons" type="submit">Start Trial</button>
+  </ul>
 </form>
 
-<form action="" class="form__signin">
-  <label>
-    Login
-    <input type="text" class="form__login" />
-  </label>
+<form class="form signin">
+  <h2 class="form__title titles">Sign in</h2>
+  <ul class="form__list">
+    <li class="form__field">
+      <label>
+        <p class="field__name">Login</p>
+        <input type="text" class="input form__login" />
+      </label>
+    </li>
+    <li class="form__field">
+      <label>
+        <p class="field__name">Password</p>
+        <input type="password" class="input form__password" />
+      </label>
+    </li>
 
-  <label>
-    Password
-    <input type="password" class="form__password" />
-  </label>
+    <button class="form__button buttons" type="submit">Sign in</button>
+  </ul>
 </form>
