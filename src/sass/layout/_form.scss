@@ -31,10 +31,11 @@
 .field__name {
 	margin-bottom: 5px;
 	font-size: 14px;
+	color: var(--third-text-color);
 }
 
 .input {
-	min-width: 100%;
+	min-width: 200px;
 }
 
 .form__first-name {
